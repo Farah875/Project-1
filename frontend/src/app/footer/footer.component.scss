@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root{
+	--background-color: rgb(226, 222, 222);
+    --font-color: rgb(41, 41, 41);
+    --primary-color: rgb(0, 68, 255);
+    --secondary-color: rgba(10, 67, 223, 0.774);
+    --accent-color: #FDD023;
+}
+
+* {
+	box-sizing: border-box;
+	margin:0px;
+	padding:0;
+}
+
+body {
+	background-color: var(--background-color);
+	/* font-size: 20px;  */
+	font-size: 1rem;
+	font-family: 'Ubuntu', sans-serif;
+	color: var(--font-color);
+
+}
+
+
+.footer{
+	padding-top: 2em;
+	margin-top: 2em;
+	background-color: #0000A0;
+	height: 10em;
+  width: 100%;
+}
+
+span{
+	font-size: medium;
+	color: #FFFFFF;
+	padding-top: 5px;
+}
+
+.footer >.h3, h3{
+	color: white;
+}
+
+.footer #socialmedia{
+	list-style: none;
+	display: flex;
+	flex-flow: row;
+	flex-wrap: nowrap;
+  justify-content: space-evenly;
+
+  // list-style: none;
+  // display: flex;
+  // align-items: flex-start;
+  // flex-wrap: wrap;
+}
+.footer #socialmedia li >img{
+	height: 30px;
+	width: 30px;
+}
+
+@media only screen and (max-width: 768px){
+  .footer #socialmedia{
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+
+  }
+
+}

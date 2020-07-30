@@ -1,0 +1,49 @@
+#left{
+	margin-left: 5em;
+	padding-top: 2em;
+	align-items: center;
+	flex-basis: 20%;
+}
+
+#left ul{
+	/* padding-right: 1em; */
+	width: fit-content;
+	border-style: solid;
+	border-color: #0000FF;
+	border-radius: 2em;
+	border-width: 0.2em;
+	background-color: #FFFFFF;
+	box-shadow: 10px 5px 5px ;
+}
+#left ul li{
+	padding: 0.5em;
+	list-style: none;
+	/* list-style-image: url(bullhorn-solid.svg); */
+	/* border-bottom-style: dashed ;
+	border-color: aquamarine; */
+}
+
+#left ul li h5{
+	/* margin-left: 15%; */
+	font-weight: bold;
+}
+
+#left ul li p{
+	font-size: small;
+}
+
+#left ul li .Date{
+	font-size: small;
+	color: #dddfad;
+}
+hr.solid{
+	border-top: 1px solid #0000FF;
+}
+@media only screen and (max-width:600px){
+
+  #left{
+		flex-basis: 70%;
+		margin-left: 0;
+		width: 100%;
+	}
+}

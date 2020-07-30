@@ -1,0 +1,228 @@
+.carousel-item > img{
+	height: 400px;
+}
+
+#center{
+	padding: 2em;
+	display: flex;
+	flex-flow: row;
+	flex-wrap: nowrap;
+	margin: 0;
+	/* display: grid;
+  	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	  grid-gap: 1rem; */
+
+}
+hr.solid{
+	border-top: 1px solid #0000FF;
+}
+
+#middle{
+	order: -1;
+	text-align: center;
+	text-align: justify;
+	padding-right: 2em;
+	padding-left: 2em;
+	flex-basis: 70%;
+}
+
+#middle >.h2, h2{
+	padding-left: 45%;
+	color: black;
+}
+
+/* #right{
+	/* padding-right: 1em;
+	flex-basis: 25%;
+	align-items: center;
+	align-content: center;
+}
+
+#right img{
+	margin-top: 40%;
+	margin-left:10% ;
+	width: 80%;
+} */
+
+#split{
+	background-color:#4646FF ;
+	margin-left: 10%;
+	width:80%;
+	height: 5em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+#split >img{
+	height: 4em;
+	width: 4em;
+	margin: 0.4em;
+}
+
+#split >span{
+	font-size: medium;
+	color: #FFFFFF;
+	margin-top: 1em;
+}
+
+.EventCards {
+
+	margin: 2em;
+	display: flex;
+	flex-flow: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+
+}
+
+.card{
+	margin-right: 1em;
+	box-shadow: 10px 5px 5px  ;
+}
+
+#READ{
+	width :100%;
+	height:3em ;
+}
+
+ #readMore{
+	float :right;
+	margin-right:2em;
+	margin-bottom: 2em;
+}
+
+.footer{
+	padding-top: 2em;
+	margin-top: 2em;
+	background-color: #0000A0;
+	height: 10em;
+	width: 100%;
+}
+
+.footer >.h3, h3{
+	color: white;
+}
+
+.footer #socialmedia{
+	list-style: none;
+	display: flex;
+	flex-flow: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+
+}
+.footer #socialmedia li >img{
+	height: 30px;
+	width: 30px;
+}
+
+/* #split >.h4 ,h4 {
+	margin-top: 1em;
+	color: #FFFFFF;
+} */
+@media only screen and (max-width:1000px){
+	body{font-size:20px}
+}
+@media only screen and (max-width:900px){
+	body{font-size:16px}
+	#center{
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	#middle{
+		flex-basis: 100%;
+		order: -1;
+	}
+	/* #left , #right{
+		flex-basis: 50%;
+		/* width:50%;
+	} */
+
+	#left{
+		flex-basis: 50%;
+		margin-left: 25%;
+	}
+
+	.EventCards {
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+
+	}
+	.card{
+		margin-bottom: 1em;
+	}
+
+
+}
+/* @media only screen and (max-width:750px){
+	body{font-size:13px}
+} */
+@media only screen and (max-width:600px){
+	body{font-size:14px}
+	header .btn-group {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 5%;
+	}
+
+	#center{
+		padding:2em ;
+		display: flex;
+		align-items: center;
+		flex-flow: column;
+		flex-wrap: nowrap;
+	}
+
+	#middle >.h2, h2{
+		padding-left: 35%;
+		color: black;
+	}
+
+	#left{
+		flex-basis: 70%;
+		margin-left: 0;
+		width: 80%;
+	}
+
+	.item{
+		width: 100%;
+		margin-top: 1em;
+		display: inline-block;
+	}
+
+	#split{
+		height: 6em;
+		width: 100%;
+		margin: 0;
+	}
+
+	#first{
+		padding-top: 1em;
+	}
+
+	#split >img{
+		height: 2em;
+		width: 2em;
+		margin-top: 2em;
+		/* height: 4em;
+		width: 4em; */
+		/* margin: 0.4em; */
+	}
+
+	.EventCards {
+		padding:2em ;
+		display: flex;
+		align-items: center;
+		flex-flow: column;
+		flex-wrap: nowrap;
+
+	}
+	.card{
+		margin-bottom: 1em;
+  }
+}
