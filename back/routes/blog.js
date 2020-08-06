@@ -4,11 +4,8 @@ const Router = express.Router();
 var mammoth = require("mammoth");
 const mysqlconnection = require('../connection');
 
-Router.get("/:id", (req, res) => {
-    var id = req.params.id;
-    // res.send(`${id}`);
-    mysqlconnection.query(`SELECT * FROM mydb.blog WHERE Type=1
-    AND idBlog = ${id}`, (err, rows, fields) =>{
+Router.get("/", (req, res) => {
+    mysqlconnection.query(`SELECT * FROM mydb.blog where idBlog > 0`, (err, rows, fields) =>{
         if(!err)
         {
             // var id = rows[0].Name;

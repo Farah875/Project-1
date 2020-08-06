@@ -8,10 +8,8 @@ var connection = require ('./connection');
 const Index = require ('./routes/index');
 const About = require('./routes/about');
 const Apply = require('./routes/apply');
-const BlogS = require('./routes/blogS');
-const BlogT = require('./routes/blogT');
-const Blog1S = require('./routes/blog1S');
-const Blog1T = require('./routes/blog1T');
+const Blog = require('./routes/blog');
+const Blog1 = require('./routes/blog1');
 const Calender = require('./routes/calender');
 const Events = require('./routes/events');
 
@@ -28,10 +26,8 @@ app.use(bodyParser.json());
 app.use("/index", Index);
 app.use("/about", About);
 app.use("/apply", Apply);
-app.use("/StudentsBlog", BlogS);
-app.use("/TeachersBlog",BlogT);
-app.use("/StudentOne", Blog1S);
-app.use("/TeacherOne", Blog1T);
+app.use("/Blog",Blog);
+app.use("/OneBlog", Blog1);
 app.use("/Calender", Calender);
 app.use("/Events", Events);
 
