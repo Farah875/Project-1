@@ -5,9 +5,7 @@ const express = require('express');
 
 //routes
 var connection = require ('./connection');
-const Index = require ('./routes/index');
-const About = require('./routes/about');
-const Apply = require('./routes/apply');
+const Documents = require ('./routes/documents');
 const Blog = require('./routes/blog');
 const Blog1 = require('./routes/blog1');
 const Calender = require('./routes/calender');
@@ -23,9 +21,7 @@ app.use(bodyParser.json());
 // const db = require('./models/model');
 // db.sequelize.sync()
 
-app.use("/index", Index);
-app.use("/about", About);
-app.use("/apply", Apply);
+app.use("/Documents", Documents);
 app.use("/Blog",Blog);
 app.use("/OneBlog", Blog1);
 app.use("/Calender", Calender);

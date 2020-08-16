@@ -25,6 +25,14 @@ import { AboutComponent } from './about/about.component';
     AboutComponent
   ],
   imports: [
+    // HeaderComponent,
+    // CalenderComponent,
+    // FooterComponent,
+    // HomeComponent,
+    // BlogListComponent,
+    // BlogComponent,
+    // EventComponent,
+    // AboutComponent,
     BrowserModule,
     AppRoutingModule
   ],

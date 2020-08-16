@@ -1,5 +1,3 @@
-export interface Documents{
-  idDocuments: number;
-  title: string;
+export interface Documents {
   data: string;
 }
