@@ -11,11 +11,11 @@ import { AppRoutingModule } from '../app-routing.module';
 const baseUrl = 'http://localhost:3000/Documents';
 
 
-@Component({
-  selector: 'app-student-form',
-  templateUrl: '../about/about.component.html',
-  styleUrls: ['../about/about.component.scss']
-})
+// @Component({
+//   selector: 'app-student-form',
+//   templateUrl: '../about/about.component.html',
+//   styleUrls: ['../about/about.component.scss']
+// })
 
 @Injectable({
   providedIn: 'root'

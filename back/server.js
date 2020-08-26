@@ -1,11 +1,13 @@
 const express = require('express');
  const bodyParser = require ('body-parser');
+ const cors = require('cors');
  var mammoth = require("mammoth");
+
 //  var mysql = require("mysql");
 
 //routes
 var connection = require ('./connection');
-const Documents = require ('./routes/documents');
+const Documents = require ('./routes/document');
 const Blog = require('./routes/blog');
 const Blog1 = require('./routes/blog1');
 const Calender = require('./routes/calender');
@@ -14,7 +16,7 @@ const Events = require('./routes/events');
 
 var app = express();
 
-
+app.use(cors());
 app.use(bodyParser.json());
 
 
@@ -105,5 +107,3 @@ const port = process.env.PORT || 3000;
  app.listen(port, () => {
      console.log(`listening on port ${port} ....`);
 });
-
-

@@ -3,11 +3,11 @@ import { Documents } from '../Interfaces/documents';
 import {DocumentServiceService} from '../services/document-service.service';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  selector: 'app-apply',
+  templateUrl: './apply.component.html',
+  styleUrls: ['./apply.component.scss']
 })
-export class AboutComponent implements OnInit {
+export class ApplyComponent implements OnInit {
 
   document: Documents;
 
@@ -19,7 +19,7 @@ export class AboutComponent implements OnInit {
 
   getDocument(): void {
     // console.log('hello ' + this.documentService.getDocuments(0));
-    this.documentService.getDocuments(1)
+    this.documentService.getDocuments(2)
     .subscribe(res => this.document = res);
     // .subscribe(document => this.document = document.text());
   }

@@ -2,7 +2,7 @@
 /* CSS Document */
 
 :root{
-	--background-color: rgb(226, 222, 222);
+	--background-color: rgb(158, 209, 211);
     --font-color: rgb(41, 41, 41);
     --primary-color: rgb(0, 68, 255);
     --secondary-color: rgba(10, 67, 223, 0.774);
@@ -26,8 +26,8 @@ header {
 body {
 	background-color: var(--background-color);
 	/* font-size: 20px;  */
-	font-size: 1rem;
-	font-family: 'Ubuntu', sans-serif;
+	// font-size: 1rem;
+	// font-family: 'Ubuntu', sans-serif;
 	color: var(--font-color);
 
 }

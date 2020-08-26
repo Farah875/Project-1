@@ -3,16 +3,16 @@
 <!--body elements-->
 <div>
   <div id="heroImage">
-    <img src="..\assets\blogs_hero.jpg">
+    <img src="../../assets/blogs_hero.jpg">
   </div>
 </div>
 
 <!--Mainblog-->
 <div id="mainBlog">
   <div id="content" class="item">
-      <h3>My Title</h3>
-      <span>
-          here will be the text. here will be the text. here will be the text.
+      <h3>{{blog[0].Title}}</h3>
+      <span>{{blog[0].Content}}
+          <!-- here will be the text. here will be the text. here will be the text.
           here will be the text. here will be the text.
           here will be the text. here will be the text.
           here will be the text. here will be the text. here will be the text.
@@ -46,17 +46,17 @@
           here will be the text. here will be the text. here will be the text.
           here will be the text. here will be the text. here will be the text.
           here will be the text. here will be the text. here will be the text.
-          here will be the text. here will be the text. here will be the text.
+          here will be the text. here will be the text. here will be the text. -->
       </span>
   </div>
   <div id="right" class="item">
       <div id="image" class="item2">
-          <img src="..\assets\blog_item_1.jpg">
+          <img src="..\assets\{{blog[0].Image}}">
       </div>
       <div id="writer" class="item2">
-          <h5><b>Karam Anou Antoun</b> </h5>
+          <h5><b>{{blog[0].Name}}</b> </h5>
           <span>
-              Grade 6 Student.
+              {{blog[0].Description}}
           </span>
       </div>
   </div>

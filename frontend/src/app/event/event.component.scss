@@ -29,6 +29,20 @@
 	box-shadow: 10px 5px 5px  ;
 }
 
+#READ{
+  margin-left: 92%;
+}
+// .card #image {
+
+// }
+
+@media only screen and (max-width:1024px){
+
+  #READ{
+    margin-left: 85%;
+  }
+}
+
 @media only screen and (max-width:900px){
     /* .EventCards{
         align-items: center;
@@ -38,6 +52,9 @@
         /* margin-right: 0; */
         /* margin-right: 3em; */
         flex-basis: 40%;
+    }
+    #READ{
+      margin-left: 80%;
     }
 }
 
@@ -51,5 +68,9 @@
         margin-right: 0;
         /* margin-right: 5%; */
         flex-basis: 90%;
+    }
+
+    #READ{
+      margin-left: 40%;
     }
 }

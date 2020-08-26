@@ -1,7 +1,10 @@
+import { SafeHtml } from '@angular/platform-browser';
+
 export interface Events {
   idEvents: number;
-  title: string;
-  content: string;
-  image: string;
+  Title: string;
+  Content: string;
+  Image: string;
+  ImageURL: SafeHtml;
 }
 

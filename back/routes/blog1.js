@@ -20,7 +20,24 @@ Router.get("/:id", (req, res) => {
             // ${text} with the image ${image} `);
             // })
             // .done();
-            res.send(rows);
+
+
+            // res.send(rows);
+
+            
+            var path = rows[0].Content;
+            console.log(String(path));
+            mammoth.extractRawText({path: String(path)})
+            .then(function(result){
+            var text = result.value; // The raw text 
+                rows[0].Content = text;
+                res.send(rows);
+                // res.send(text);
+            })
+            
+            .done();
+            
+
         }
         else{
             console.log("Failed Query");

@@ -1,3 +1,11 @@
+<!-- <script>
+  function myFunction() {
+    document.getElementById("image").style.backgroundImage = "url('{{event.Image}}')";
+  }
+</script> -->
+
+
+
 <app-header></app-header>
 
 <!--body elements-->
@@ -9,7 +17,20 @@
 
 <!--Event cards-->
 <div class="EventCards">
-  <div class="card" style="width: 18rem;">
+
+  <div class="card" style="width: 18rem;" *ngFor="let event of events">
+    <!-- <div id="image" class="card-img-top" ></div>  src= {{event.Image}} -->
+    <img src='../../assets/{{event.Image}}' class="card-img-top" alt="...">
+    <!-- src='sanitizing(http://192.168.0.109:8080/{{event.Image}})' -->
+    <!-- <div id="image"><img  class="card-img-top" alt="..." \></div> -->
+    <!-- <p>{{event.ImageURL}}</p> -->
+    <div class="card-body text-white bg-primary" >
+      <h5 class="card-title">{{event.Title}}</h5>
+      <p class="card-text">{{event.Content}}</p>
+      <a href="https://www.facebook.com/AC-Secondary-School-764218030316575" class="btn btn-dark">Read more</a>
+    </div>
+  </div>
+  <!-- <div class="card" style="width: 18rem;">
     <img src="..\assets\c1.jpg" class="card-img-top" alt="...">
     <div class="card-body text-white bg-primary" >
       <h5 class="card-title">Card title</h5>
@@ -58,16 +79,23 @@
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       <a href="#" class="btn btn-dark">Read more</a>
     </div>
-  </div>
+  </div> -->
 
 </div>
 
 
  <!--READ MORE BUTTON-->
  <div id="READ">
-  <button id="readMore" type="button" class="btn btn-primary">Read More >></button>
+  <!-- <button id="readMore" type="button" class="btn btn-primary">
+    <a href="https://www.facebook.com/AC-Secondary-School-764218030316575" alt="facebook website">Read More >></a>
+    </button> -->
+    <a href="https://www.facebook.com/AC-Secondary-School-764218030316575">
+      <button id="readMore" type="button" class="btn btn-primary">Read More >></button>
+    </a>
+
+
  </div>
 
-
+ <!-- -->
 <app-footer></app-footer>
 <router-outlet></router-outlet>

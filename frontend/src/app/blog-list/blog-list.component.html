@@ -1,6 +1,9 @@
 <!--More Items-->
 <div id="more">
-  <div class="blogItem">
+  <div class="blogItem" *ngFor="let blog of blogList">
+    <a href="/blog/{{blog.idBlog}}"><b>{{blog.Title}}</b></a>
+  </div>
+  <!-- <div class="blogItem">
     <a href="#">Blog no2 title</a>
   </div>
   <div class="blogItem">
@@ -14,5 +17,5 @@
   </div>
   <div class="blogItem">
     <a href="#">Blog no6 title</a>
-  </div>
+  </div> -->
 </div>

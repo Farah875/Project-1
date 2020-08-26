@@ -13,11 +13,9 @@ con.connect(function(err) {
   if (err) throw err;
   console.log("connected");
   // con.query("SELECT * FROM mydb.documents", function (err, result, fields) {
-  //   if (err) throw err;
+  //   if (err) throw err;s 
   //   console.log(result);
-  // });
+  // })
 });
 
-
-
-module.exports = con;
+module.exports= con; 
